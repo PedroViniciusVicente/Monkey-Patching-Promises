@@ -1,4 +1,5 @@
 projects/*
 !projects/chosen_projects.md
+!projects/micro-benchmarkds/*
 
 src_old/*
