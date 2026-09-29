@@ -1,0 +1,4 @@
+projects/*
+!projects/chosen_projects.md
+
+src_old/*
