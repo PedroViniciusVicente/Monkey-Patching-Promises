@@ -36,7 +36,7 @@ node src/cli.js \
   --out "./logs/timed-frontend-async-promise-trace.ndjson"
 ```
 
-###
+#### express-promise
 ```bash
 nvm use 22
 
@@ -45,6 +45,17 @@ node src/cli.js \
   --path "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/express-promise-middleware/" \
   --out "./logs/express-promise-async-promise-trace.ndjson"
 ```
+
+#### tldr-node
+```bash
+nvm use 22
+
+node src/cli.js \
+  --cmd "npx mocha test/cache.spec.js --timeout 10000 -g 'should return a positive number on lastUpdate'" \
+  --path "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/tldr-node-client/" \
+  --out "./logs/tldr-node-async-promise-trace.ndjson"
+```
+
 
 ## Metrics
 
