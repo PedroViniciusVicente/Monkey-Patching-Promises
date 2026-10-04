@@ -1,0 +1,24 @@
+<!doctype html><meta charset="utf-8"><title>test_async_await_fs.spec.js timeline</title>
+<style>
+:root{--bg:#fff;--fg:#222;--gr:#ddd}@media(prefers-color-scheme:dark){:root{--bg:#1c1c1c;--fg:#ddd;--gr:#444}}
+body{font:13px system-ui;margin:16px;background:var(--bg);color:var(--fg)}#c{overflow-x:auto}
+.t{fill:var(--fg);font:11px ui-monospace,monospace}.g{stroke:var(--gr)}.c{stroke:#888;fill:none;stroke-dasharray:2 2}
+#lg span{margin-right:16px}#lg i{display:inline-block;width:10px;height:10px;margin-right:5px}
+</style>
+<h3>test_async_await_fs.spec.js: one bar per promise, ordered by asyncId (hover for details)</h3><div id="lg"></div><div id="c"></div>
+<script>
+const D={"rows":[{"id":492,"parent":491,"line":5,"step":"Context.\u003canonymous>","start":1790713455443,"dur":6.567338},{"id":493,"parent":491,"line":6,"step":"Object.readFile","start":1790713455444,"dur":5.949642},{"id":494,"parent":491,"line":6,"step":"open","start":1790713455444,"dur":1.074556},{"id":495,"parent":491,"line":6,"step":"open","start":1790713455444,"dur":0.59961},{"id":497,"parent":495,"line":6,"step":"open","start":1790713455444,"dur":0.689676},{"id":498,"parent":497,"line":6,"step":"open","start":1790713455444,"dur":0.823668},{"id":499,"parent":494,"line":6,"step":"Object.readFile","start":1790713455444,"dur":1.363802},{"id":500,"parent":493,"line":6,"step":"Context.\u003canonymous>","start":1790713455444,"dur":5.459183},{"id":502,"parent":492,"line":5,"step":"callFn","start":1790713455445,"dur":5.681471},{"id":505,"parent":499,"line":6,"step":"readFileHandle","start":1790713455445,"dur":2.466027},{"id":506,"parent":499,"line":6,"step":"readFileHandle","start":1790713455445,"dur":1.869513},{"id":508,"parent":506,"line":6,"step":"readFileHandle","start":1790713455446,"dur":1.906726},{"id":509,"parent":508,"line":6,"step":"readFileHandle","start":1790713455446,"dur":2.11315},{"id":510,"parent":499,"line":6,"step":"handleFdClose","start":1790713455446,"dur":4.044942},{"id":511,"parent":505,"line":6,"step":"handleFdClose","start":1790713455446,"dur":3.995762},{"id":512,"parent":511,"line":6,"step":"(internal)","start":1790713455446,"dur":3.969298},{"id":513,"parent":510,"line":6,"step":"(internal)","start":1790713455446,"dur":3.947501},{"id":515,"parent":509,"line":6,"step":"readFileHandle","start":1790713455448,"dur":0.212414},{"id":517,"parent":515,"line":6,"step":"readFileHandle","start":1790713455448,"dur":0.181483},{"id":518,"parent":517,"line":6,"step":"readFileHandle","start":1790713455448,"dur":0.185368},{"id":520,"parent":511,"line":6,"step":"close","start":1790713455448,"dur":1.328552},{"id":522,"parent":511,"line":6,"step":"\u003canonymous>","start":1790713455448,"dur":1.524764},{"id":523,"parent":511,"line":6,"step":"new SafePromise","start":1790713455448,"dur":1.220211},{"id":524,"parent":520,"line":6,"step":"\u003canonymous>","start":1790713455448,"dur":1.192237},{"id":525,"parent":511,"line":6,"step":"new SafePromise","start":1790713455448,"dur":1.343374},{"id":526,"parent":511,"line":6,"step":"new SafePromise","start":1790713455449,"dur":0.456149},{"id":527,"parent":522,"line":6,"step":"\u003canonymous>","start":1790713455449,"dur":0.433608},{"id":528,"parent":527,"line":6,"step":"(internal)","start":1790713455449,"dur":0.41343},{"id":530,"parent":525,"line":6,"step":"new SafePromise","start":1790713455449,"dur":0.004373},{"id":531,"parent":525,"line":6,"step":"new SafePromise","start":1790713455450,"dur":0.007491},{"id":532,"parent":525,"line":6,"step":"new SafePromise","start":1790713455450,"dur":0.022076}],"ops":{"5":"test body","6":"fs/promises.readFile"}},R=D.rows;
+const t0=Math.min(...R.map(r=>r.start)),t1=Math.max(...R.map(r=>r.start+r.dur));
+const G=330,W=960,RH=22,P=34,H=R.length*RH+P*2,span=(t1-t0)||1,PW=W-G-24;
+const sx=t=>G+(t-t0)/span*PW;
+const ys={};R.forEach((r,i)=>ys[r.id]=P+i*RH+RH/2);
+const L=Object.keys(D.ops);
+const col=l=>'hsl('+(L.indexOf(String(l))*130+200)+' 62% 52%)';
+let s='';
+for(let i=0;i<=5;i++){const x=G+i*PW/5;s+='<line x1="'+x+'" x2="'+x+'" y1="'+(P-8)+'" y2="'+(H-P+8)+'" class="g"/><text x="'+x+'" y="'+(P-14)+'" text-anchor="middle" class="t">'+(span*i/5).toFixed(1)+' ms</text>';}
+R.forEach(r=>{if(ys[r.parent]!==undefined)s+='<path d="M'+sx(r.start)+' '+ys[r.parent]+'V'+ys[r.id]+'" class="c"/>';});
+R.forEach(r=>{const y=ys[r.id],w=Math.max(3,r.dur/span*PW);
+s+='<g><title>asyncId '+r.id+' (parent '+r.parent+')\nline '+r.line+': '+D.ops[r.line]+'\nstep: '+r.step+'\nstarted +'+(r.start-t0)+' ms, duration '+r.dur.toFixed(3)+' ms</title><text x="8" y="'+(y+4)+'" class="t">#'+r.id+'  L'+r.line+'  '+r.step+'</text><rect x="'+sx(r.start)+'" y="'+(y-7)+'" width="'+w+'" height="14" rx="2" fill="'+col(r.line)+'"/></g>';});
+document.getElementById('c').innerHTML='<svg width="'+W+'" height="'+H+'">'+s+'</svg>';
+document.getElementById('lg').innerHTML=L.map(l=>'<span><i style="background:'+col(l)+'"></i>line '+l+': '+D.ops[l]+'</span>').join('');
+</script>
