@@ -1,87 +1,111 @@
 #!/usr/bin/env node
 'use strict';
 
-/**
- * cli.js
- *
- * Runs a test command (Mocha, Jest, etc.) with promise-tracker.js
- * preloaded via NODE_OPTIONS="--require ...", inside a given project directory.
- *
- * Usage:
- *   node cli.js --cmd "<test command>" --path "<project path>" [--out <file>]
- *
- * Example:
- *   node cli.js \
- *     --cmd "npx mocha 'test/unit/forge/routes/api/team_spec.js' --timeout 10000 --node-option=unhandled-rejections=strict -g 'com todas as instâncias e seus status'" \
- *     --path "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/flowfuse"
- */
-
-const fs = require('fs');
 const path = require('path');
-const { spawn } = require('child_process');
-const { parseArgs } = require('util');
+const fs = require('fs');
+const { runTracedTestCommand } = require('./child-process-runner');
 
-function printUsageAndExit(message) {
-  if (message) console.error(`[promise-tracker] ${message}\n`);
-  console.error(
-    'Usage: promise-tracker --cmd "<test command>" --path "<project path>" [--out <log-file>]'
-  );
-  process.exit(1);
+function parseArgs(argv) {
+  const args = { projectDir: null, testCommand: null, output: './logs/promise-trace.jsonl' };
+  for (let i = 0; i < argv.length; i++) {
+    const arg = argv[i];
+    switch (arg) {
+      case '--project-dir':
+        args.projectDir = argv[++i];
+        break;
+      case '--test-command':
+        args.testCommand = argv[++i];
+        break;
+      case '--output':
+        args.output = argv[++i];
+        break;
+      case '--help':
+      case '-h':
+        printUsage();
+        process.exit(0);
+        break;
+      default:
+        throw new Error(`Argumento desconhecido: ${arg}`);
+    }
+  }
+  return args;
 }
 
-let values;
-try {
-  ({ values } = parseArgs({
-    options: {
-      cmd: { type: 'string', short: 'c' },
-      path: { type: 'string', short: 'p' },
-      out: { type: 'string', short: 'o', default: 'promise-trace.ndjson' },
-    },
-  }));
-} catch (err) {
-  printUsageAndExit(err.message);
+function validateArgs(args) {
+  const errors = [];
+  if (!args.projectDir) {
+    errors.push('--project-dir é obrigatório');
+  } else if (!path.isAbsolute(args.projectDir)) {
+    errors.push('--project-dir precisa ser um caminho absoluto');
+  } else if (!fs.existsSync(args.projectDir)) {
+    errors.push(`--project-dir não existe: ${args.projectDir}`);
+  }
+
+  if (!args.testCommand) {
+    errors.push('--test-command é obrigatório');
+  }
+
+  return errors;
 }
 
-if (!values.cmd || !values.path) {
-  printUsageAndExit('Both --cmd and --path are required.');
+function printUsage() {
+  console.error(`
+Uso:
+  node cli.js --project-dir <caminho absoluto> --test-command "<comando>" [--output <caminho>]
+
+Exemplo:
+  node cli.js \\
+    --project-dir "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/flowfuse" \\
+    --test-command "npx mocha 'test/unit/forge/routes/api/team_spec.js' --timeout 10000 --node-option=unhandled-rejections=strict -g 'with all instances and their status'" \\
+    --output "./logs/promise-trace.jsonl"
+`);
 }
 
-const projectPath = path.resolve(values.path);
-if (!fs.existsSync(projectPath) || !fs.statSync(projectPath).isDirectory()) {
-  printUsageAndExit(`--path does not point to an existing directory: ${projectPath}`);
+async function main() {
+  const argv = process.argv.slice(2);
+  let args;
+  try {
+    args = parseArgs(argv);
+  } catch (err) {
+    console.error(`Erro de argumento: ${err.message}`);
+    printUsage();
+    process.exitCode = 1;
+    return;
+  }
+
+  const errors = validateArgs(args);
+  if (errors.length) {
+    console.error('Argumentos inválidos:\n' + errors.map((e) => `  - ${e}`).join('\n'));
+    printUsage();
+    process.exitCode = 1;
+    return;
+  }
+
+  const resolvedOutput = path.resolve(args.output);
+  fs.mkdirSync(path.dirname(resolvedOutput), { recursive: true });
+
+  console.log('[promise-monkey-tracer] projeto :', args.projectDir);
+  console.log('[promise-monkey-tracer] comando :', args.testCommand);
+  console.log('[promise-monkey-tracer] output  :', resolvedOutput);
+  console.log('---');
+
+  const { code, signal } = await runTracedTestCommand({
+    projectDir: args.projectDir,
+    testCommand: args.testCommand,
+    outputPath: resolvedOutput,
+  });
+
+  console.log('---');
+  console.log(`[promise-monkey-tracer] processo de teste encerrado (code=${code}, signal=${signal})`);
+  console.log(`[promise-monkey-tracer] trace gravado em ${resolvedOutput}`);
+
+  // Propaga o código de saída do próprio comando de teste, para que esta
+  // ferramenta seja transparente em pipelines de CI (um teste vermelho deve
+  // continuar falhando o pipeline).
+  process.exitCode = code === null ? 1 : code;
 }
 
-const logFile = path.resolve(values.out);
-const hookFile = path.join(__dirname, 'promise-tracker.js');
-
-// Preload the tracker ahead of whatever NODE_OPTIONS the user already had set.
-const existingNodeOptions = process.env.NODE_OPTIONS || '';
-const nodeOptions = `--require "${hookFile}" ${existingNodeOptions}`.trim();
-
-console.log(`[promise-tracker] command : ${values.cmd}`);
-console.log(`[promise-tracker] project : ${projectPath}`);
-console.log(`[promise-tracker] log     : ${logFile}`);
-console.log('[promise-tracker] starting instrumented test run...\n');
-
-const child = spawn(values.cmd, {
-  cwd: projectPath,
-  shell: true,
-  stdio: 'inherit',
-  env: {
-    ...process.env,
-    NODE_OPTIONS: nodeOptions,
-    PROMISE_TRACKER_LOG_FILE: logFile,
-  },
-});
-
-child.on('error', (err) => {
-  console.error(`[promise-tracker] failed to start test command: ${err.message}`);
-  process.exit(1);
-});
-
-child.on('exit', (code, signal) => {
-  console.log(`\n[promise-tracker] test process finished (code=${code}, signal=${signal})`);
-  console.log(`[promise-tracker] trace log : ${logFile}`);
-  console.log(`[promise-tracker] summary   : ${logFile.replace(/\.ndjson$/i, '')}.summary.json`);
-  process.exit(code === null ? 1 : code);
+main().catch((err) => {
+  console.error('[promise-monkey-tracer] erro fatal:', err);
+  process.exitCode = 1;
 });
