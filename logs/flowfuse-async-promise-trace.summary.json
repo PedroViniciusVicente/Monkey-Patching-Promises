@@ -1,8 +1,0 @@
-{
-  "totalCreated": 757,
-  "stillPendingAtExit": 0,
-  "pendingCallSites": [],
-  "asyncFunctionCallsObserved": 205,
-  "logFile": "/home/pedroubuntu/Desktop/monkey_patching_projects/logs/flowfuse-async-promise-trace.ndjson",
-  "generatedAt": "2026-09-29T07:00:17.065Z"
-}
