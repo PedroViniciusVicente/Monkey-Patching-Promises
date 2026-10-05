@@ -1,8 +1,0 @@
-{
-  "totalCreated": 543,
-  "stillPendingAtExit": 0,
-  "pendingCallSites": [],
-  "asyncFunctionCallsObserved": 160,
-  "logFile": "/home/pedroubuntu/Desktop/monkey_patching_projects/logs-micro-benchmark/test_async_await-asynchooks-promise-trace.ndjson",
-  "generatedAt": "2026-09-29T19:28:26.932Z"
-}

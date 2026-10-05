@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
 
-const inputFile = process.argv[2] || 'logs-micro-benchmark/test_async_await-asynchooks-promise-trace.ndjson';
+const inputFile = process.argv[2] || 'logs-micro-benchmark/test_async_await_fs-asynchooks-promise-trace.ndjson';
 const outputFile = process.argv[3] || inputFile.replace(/\.ndjson$/, '.filtered.ndjson');
 
 async function filterFile() {
