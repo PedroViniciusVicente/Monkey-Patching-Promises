@@ -10,7 +10,7 @@ node filter_traces_stack.js test_async_await_fetch-trace.jsonl /home/pedroubuntu
 node filter_traces_stack.js test_race-trace.jsonl /home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/test_race.spec.js _filtered-test_race-trace.json
 // filtrou 41 para 5 OK!
 node filter_traces_stack.js flowfuse-trace.jsonl /home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/test/unit/forge/routes/api/team_spec.js _filtered-flowfuse-trace.json
-// filtrou 7852
+// filtrou 7852 para 6 (nao OK)
 node filter_traces_stack.js milo-trace.jsonl /home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/milo/test/utils/logWebVitalsUtils.test.js _filtered-milo-trace.json
 // filtrou 2891
 */
@@ -65,23 +65,34 @@ function isDirectUserTrace(trace, targetFile) {
   }
 
   // 2. Encontra o índice do primeiro frame que pertence ao código do usuário
-  const userFrameIndex = trace.stack.findIndex(frame => {
-    if (!frame.file) return false;
-    return !frame.file.startsWith("node:") && !frame.file.includes("node:internal");
-  });
+//   const userFrameIndex = trace.stack.findIndex(frame => {
+//     if (!frame.file) return false;
+//     return !frame.file.startsWith("node:") && !frame.file.includes("node:internal");
+//   });
 
-  if (userFrameIndex === -1) return false;
+//   if (userFrameIndex === -1) return false;
+
+    // 2. Encontra QUALQUER frame que seja o target file
+    const targetFrameIndex = trace.stack.findIndex(frame => {
+        if (!frame.file) return false;
+        return path.resolve(frame.file) === targetFile;
+    });
+
+    if (targetFrameIndex === -1) return false;
 
   // 3. Valida se o arquivo desse frame é o alvo analisado
-  const isTargetFile = path.resolve(trace.stack[userFrameIndex].file) === targetFile;
-  if (!isTargetFile) return false;
+//   const isTargetFile = path.resolve(trace.stack[userFrameIndex].file) === targetFile;
+//   if (!isTargetFile) return false;
 
   // 4. HEURÍSTICA DE REFINAMENTO:
   // Filtra apenas Promises criadas via 'createDeferredPromise' (usada por Web APIs públicas)
   // e com uma profundidade rasa até o código do usuário (<= 4 frames).
-  const topFrame = trace.stack[0];
+//   const topFrame = trace.stack[0];
 //   const isPublicWebApi = topFrame && topFrame.functionName === "createDeferredPromise";
-  const isShallowStack = userFrameIndex <= 4;
+//   const isShallowStack = userFrameIndex <= 4;
+
+  // Opcional: ainda pode querer limitar a profundidade
+  const isShallowStack = targetFrameIndex <= 4;
 
 //   return isPublicWebApi && isShallowStack;
   return isShallowStack;

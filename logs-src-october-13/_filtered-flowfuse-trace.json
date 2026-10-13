@@ -1,1 +1,336 @@
-[]
+[
+  {
+    "internalId": "p14794_6554",
+    "pid": 14794,
+    "asyncId": 6554,
+    "triggerAsyncId": 6508,
+    "origin": "tick",
+    "type": "process.nextTick",
+    "combinatorMethod": null,
+    "status": "fulfilled",
+    "createdAt": "2026-10-13T06:35:10.782Z",
+    "settledAt": "2026-10-13T06:35:10.786Z",
+    "durationMs": 4.220398,
+    "continuationRuns": 1,
+    "testFile": "test/unit/forge/routes/api/team_spec.js",
+    "stack": [
+      {
+        "functionName": "new Chain",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/light-my-request/index.js",
+        "line": 81,
+        "column": 13
+      },
+      {
+        "functionName": "inject",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/light-my-request/index.js",
+        "line": 13,
+        "column": 12
+      },
+      {
+        "functionName": "Object.inject",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/fastify/fastify.js",
+        "line": 558,
+        "column": 14
+      },
+      {
+        "functionName": "login",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/test/unit/forge/routes/api/team_spec.js",
+        "line": 42,
+        "column": 36
+      },
+      {
+        "functionName": "Context.<anonymous>",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/test/unit/forge/routes/api/team_spec.js",
+        "line": 36,
+        "column": 15
+      }
+    ]
+  },
+  {
+    "internalId": "p14794_6680",
+    "pid": 14794,
+    "asyncId": 6680,
+    "triggerAsyncId": 6559,
+    "origin": "tick",
+    "type": "process.nextTick",
+    "combinatorMethod": null,
+    "status": "fulfilled",
+    "createdAt": "2026-10-13T06:35:10.854Z",
+    "settledAt": "2026-10-13T06:35:10.855Z",
+    "durationMs": 0.690691,
+    "continuationRuns": 1,
+    "testFile": "test/unit/forge/routes/api/team_spec.js",
+    "stack": [
+      {
+        "functionName": "new Chain",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/light-my-request/index.js",
+        "line": 81,
+        "column": 13
+      },
+      {
+        "functionName": "inject",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/light-my-request/index.js",
+        "line": 13,
+        "column": 12
+      },
+      {
+        "functionName": "Object.inject",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/fastify/fastify.js",
+        "line": 558,
+        "column": 14
+      },
+      {
+        "functionName": "login",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/test/unit/forge/routes/api/team_spec.js",
+        "line": 42,
+        "column": 36
+      },
+      {
+        "functionName": "Context.<anonymous>",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/test/unit/forge/routes/api/team_spec.js",
+        "line": 37,
+        "column": 15
+      },
+      {
+        "functionName": "process.processTicksAndRejections",
+        "file": "node:internal/process/task_queues",
+        "line": 95,
+        "column": 5
+      }
+    ]
+  },
+  {
+    "internalId": "p14794_6804",
+    "pid": 14794,
+    "asyncId": 6804,
+    "triggerAsyncId": 6685,
+    "origin": "tick",
+    "type": "process.nextTick",
+    "combinatorMethod": null,
+    "status": "fulfilled",
+    "createdAt": "2026-10-13T06:35:10.919Z",
+    "settledAt": "2026-10-13T06:35:10.920Z",
+    "durationMs": 1.135448,
+    "continuationRuns": 1,
+    "testFile": "test/unit/forge/routes/api/team_spec.js",
+    "stack": [
+      {
+        "functionName": "new Chain",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/light-my-request/index.js",
+        "line": 81,
+        "column": 13
+      },
+      {
+        "functionName": "inject",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/light-my-request/index.js",
+        "line": 13,
+        "column": 12
+      },
+      {
+        "functionName": "Object.inject",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/fastify/fastify.js",
+        "line": 558,
+        "column": 14
+      },
+      {
+        "functionName": "login",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/test/unit/forge/routes/api/team_spec.js",
+        "line": 42,
+        "column": 36
+      },
+      {
+        "functionName": "Context.<anonymous>",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/test/unit/forge/routes/api/team_spec.js",
+        "line": 38,
+        "column": 15
+      },
+      {
+        "functionName": "process.processTicksAndRejections",
+        "file": "node:internal/process/task_queues",
+        "line": 95,
+        "column": 5
+      }
+    ]
+  },
+  {
+    "internalId": "p14794_7507",
+    "pid": 14794,
+    "asyncId": 7507,
+    "triggerAsyncId": 7503,
+    "origin": "tick",
+    "type": "process.nextTick",
+    "combinatorMethod": null,
+    "status": "fulfilled",
+    "createdAt": "2026-10-13T06:35:11.533Z",
+    "settledAt": "2026-10-13T06:35:11.537Z",
+    "durationMs": 4.071589,
+    "continuationRuns": 1,
+    "testFile": "test/unit/forge/routes/api/team_spec.js",
+    "stack": [
+      {
+        "functionName": "new Chain",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/light-my-request/index.js",
+        "line": 81,
+        "column": 13
+      },
+      {
+        "functionName": "inject",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/light-my-request/index.js",
+        "line": 13,
+        "column": 12
+      },
+      {
+        "functionName": "Object.inject",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/fastify/fastify.js",
+        "line": 558,
+        "column": 14
+      },
+      {
+        "functionName": "Context.<anonymous>",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/test/unit/forge/routes/api/team_spec.js",
+        "line": 520,
+        "column": 40
+      }
+    ]
+  },
+  {
+    "internalId": "p14794_7734",
+    "pid": 14794,
+    "asyncId": 7734,
+    "triggerAsyncId": 7730,
+    "origin": "microtask",
+    "type": "queueMicrotask",
+    "combinatorMethod": null,
+    "status": "fulfilled",
+    "createdAt": "2026-10-13T06:35:11.561Z",
+    "settledAt": "2026-10-13T06:35:11.563Z",
+    "durationMs": 2.619272,
+    "continuationRuns": 1,
+    "testFile": "test/unit/forge/routes/api/team_spec.js",
+    "stack": [
+      {
+        "functionName": "Boot.ready",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/avvio/boot.js",
+        "line": 326,
+        "column": 5
+      },
+      {
+        "functionName": "Boot.close",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/avvio/boot.js",
+        "line": 311,
+        "column": 8
+      },
+      {
+        "functionName": "server.<computed> [as close]",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/avvio/boot.js",
+        "line": 254,
+        "column": 21
+      },
+      {
+        "functionName": "Context.<anonymous>",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/test/unit/forge/routes/api/team_spec.js",
+        "line": 68,
+        "column": 23
+      },
+      {
+        "functionName": "callFn",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/mocha/lib/runnable.js",
+        "line": 366,
+        "column": 21
+      },
+      {
+        "functionName": "Runnable.run",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/mocha/lib/runnable.js",
+        "line": 354,
+        "column": 5
+      },
+      {
+        "functionName": "next",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/mocha/lib/runner.js",
+        "line": 498,
+        "column": 10
+      },
+      {
+        "functionName": "Immediate.<anonymous>",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/mocha/lib/runner.js",
+        "line": 559,
+        "column": 5
+      },
+      {
+        "functionName": "process.processImmediate",
+        "file": "node:internal/timers",
+        "line": 483,
+        "column": 21
+      }
+    ]
+  },
+  {
+    "internalId": "p14794_7731",
+    "pid": 14794,
+    "asyncId": 7731,
+    "triggerAsyncId": 7730,
+    "origin": "constructor",
+    "type": "Promise",
+    "combinatorMethod": null,
+    "status": "fulfilled",
+    "createdAt": "2026-10-13T06:35:11.561Z",
+    "settledAt": "2026-10-13T06:35:11.566Z",
+    "durationMs": 5.256025,
+    "continuationRuns": 0,
+    "testFile": "test/unit/forge/routes/api/team_spec.js",
+    "value": {
+      "type": "undefined",
+      "preview": "undefined"
+    },
+    "stack": [
+      {
+        "functionName": "Boot.close",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/avvio/boot.js",
+        "line": 301,
+        "column": 15
+      },
+      {
+        "functionName": "server.<computed> [as close]",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/avvio/boot.js",
+        "line": 254,
+        "column": 21
+      },
+      {
+        "functionName": "Context.<anonymous>",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/test/unit/forge/routes/api/team_spec.js",
+        "line": 68,
+        "column": 23
+      },
+      {
+        "functionName": "callFn",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/mocha/lib/runnable.js",
+        "line": 366,
+        "column": 21
+      },
+      {
+        "functionName": "Runnable.run",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/mocha/lib/runnable.js",
+        "line": 354,
+        "column": 5
+      },
+      {
+        "functionName": "next",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/mocha/lib/runner.js",
+        "line": 498,
+        "column": 10
+      },
+      {
+        "functionName": "Immediate.<anonymous>",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/node_modules/mocha/lib/runner.js",
+        "line": 559,
+        "column": 5
+      },
+      {
+        "functionName": "process.processImmediate",
+        "file": "node:internal/timers",
+        "line": 483,
+        "column": 21
+      }
+    ]
+  }
+]
