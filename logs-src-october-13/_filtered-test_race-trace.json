@@ -1,0 +1,436 @@
+[
+  {
+    "internalId": "p12116_24",
+    "pid": 12116,
+    "asyncId": 24,
+    "triggerAsyncId": 21,
+    "origin": "constructor",
+    "type": "Promise",
+    "combinatorMethod": null,
+    "status": "fulfilled",
+    "createdAt": "2026-10-13T05:53:09.134Z",
+    "settledAt": "2026-10-13T05:53:09.240Z",
+    "durationMs": 105.693134,
+    "continuationRuns": 0,
+    "testFile": "test_race.spec.js",
+    "value": {
+      "type": "object",
+      "preview": "Response {}",
+      "truncated": false
+    },
+    "stack": [
+      {
+        "functionName": "createDeferredPromise",
+        "file": "node:internal/deps/undici/undici",
+        "line": 4976,
+        "column": 23
+      },
+      {
+        "functionName": "fetch",
+        "file": "node:internal/deps/undici/undici",
+        "line": 10941,
+        "column": 15
+      },
+      {
+        "functionName": "fetch",
+        "file": "node:internal/deps/undici/undici",
+        "line": 15420,
+        "column": 10
+      },
+      {
+        "functionName": "fetch",
+        "file": "node:internal/bootstrap/web/exposed-window-or-worker",
+        "line": 83,
+        "column": 12
+      },
+      {
+        "functionName": "Context.<anonymous>",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/test_race.spec.js",
+        "line": 7,
+        "column": 5
+      },
+      {
+        "functionName": "callFn",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runnable.js",
+        "line": 360,
+        "column": 23
+      },
+      {
+        "functionName": "Test.run",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runnable.js",
+        "line": 348,
+        "column": 7
+      },
+      {
+        "functionName": "Runner.runTest",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 809,
+        "column": 10
+      },
+      {
+        "functionName": "<anonymous>",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 949,
+        "column": 12
+      },
+      {
+        "functionName": "next",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 724,
+        "column": 14
+      },
+      {
+        "functionName": "<anonymous>",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 734,
+        "column": 7
+      },
+      {
+        "functionName": "next",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 595,
+        "column": 14
+      },
+      {
+        "functionName": "Immediate.<anonymous>",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 702,
+        "column": 5
+      },
+      {
+        "functionName": "process.processImmediate",
+        "file": "node:internal/timers",
+        "line": 505,
+        "column": 21
+      }
+    ]
+  },
+  {
+    "internalId": "p12116_34",
+    "pid": 12116,
+    "asyncId": 34,
+    "triggerAsyncId": 33,
+    "origin": "timer",
+    "type": "setTimeout",
+    "combinatorMethod": null,
+    "status": "fulfilled",
+    "createdAt": "2026-10-13T05:53:09.163Z",
+    "settledAt": "2026-10-13T05:53:09.263Z",
+    "durationMs": 100.180803,
+    "continuationRuns": 1,
+    "testFile": "test_race.spec.js",
+    "delayMs": 100,
+    "stack": [
+      {
+        "functionName": "<anonymous>",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/test_race.spec.js",
+        "line": 9,
+        "column": 30
+      },
+      {
+        "functionName": "Context.<anonymous>",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/test_race.spec.js",
+        "line": 9,
+        "column": 5
+      },
+      {
+        "functionName": "callFn",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runnable.js",
+        "line": 360,
+        "column": 23
+      },
+      {
+        "functionName": "Test.run",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runnable.js",
+        "line": 348,
+        "column": 7
+      },
+      {
+        "functionName": "Runner.runTest",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 809,
+        "column": 10
+      },
+      {
+        "functionName": "<anonymous>",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 949,
+        "column": 12
+      },
+      {
+        "functionName": "next",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 724,
+        "column": 14
+      },
+      {
+        "functionName": "<anonymous>",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 734,
+        "column": 7
+      },
+      {
+        "functionName": "next",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 595,
+        "column": 14
+      },
+      {
+        "functionName": "Immediate.<anonymous>",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 702,
+        "column": 5
+      },
+      {
+        "functionName": "process.processImmediate",
+        "file": "node:internal/timers",
+        "line": 505,
+        "column": 21
+      }
+    ]
+  },
+  {
+    "internalId": "p12116_33",
+    "pid": 12116,
+    "asyncId": 33,
+    "triggerAsyncId": 21,
+    "origin": "constructor",
+    "type": "Promise",
+    "combinatorMethod": null,
+    "status": "fulfilled",
+    "createdAt": "2026-10-13T05:53:09.163Z",
+    "settledAt": "2026-10-13T05:53:09.264Z",
+    "durationMs": 100.45857,
+    "continuationRuns": 0,
+    "testFile": "test_race.spec.js",
+    "value": {
+      "type": "string",
+      "preview": "done!",
+      "truncated": false,
+      "originalLength": 5
+    },
+    "stack": [
+      {
+        "functionName": "Context.<anonymous>",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/test_race.spec.js",
+        "line": 9,
+        "column": 5
+      },
+      {
+        "functionName": "callFn",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runnable.js",
+        "line": 360,
+        "column": 23
+      },
+      {
+        "functionName": "Test.run",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runnable.js",
+        "line": 348,
+        "column": 7
+      },
+      {
+        "functionName": "Runner.runTest",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 809,
+        "column": 10
+      },
+      {
+        "functionName": "<anonymous>",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 949,
+        "column": 12
+      },
+      {
+        "functionName": "next",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 724,
+        "column": 14
+      },
+      {
+        "functionName": "<anonymous>",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 734,
+        "column": 7
+      },
+      {
+        "functionName": "next",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 595,
+        "column": 14
+      },
+      {
+        "functionName": "Immediate.<anonymous>",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 702,
+        "column": 5
+      },
+      {
+        "functionName": "process.processImmediate",
+        "file": "node:internal/timers",
+        "line": 505,
+        "column": 21
+      }
+    ]
+  },
+  {
+    "internalId": "p12116_35",
+    "pid": 12116,
+    "asyncId": 35,
+    "triggerAsyncId": 21,
+    "origin": "combinator",
+    "type": "Promise.all",
+    "combinatorMethod": "all",
+    "status": "fulfilled",
+    "createdAt": "2026-10-13T05:53:09.163Z",
+    "settledAt": "2026-10-13T05:53:09.264Z",
+    "durationMs": 100.334261,
+    "continuationRuns": 0,
+    "testFile": "test_race.spec.js",
+    "inputCount": 3,
+    "dependsOn": [
+      31,
+      32,
+      33
+    ],
+    "stack": [
+      {
+        "functionName": "Context.<anonymous>",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/test_race.spec.js",
+        "line": 6,
+        "column": 55
+      },
+      {
+        "functionName": "callFn",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runnable.js",
+        "line": 360,
+        "column": 23
+      },
+      {
+        "functionName": "Test.run",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runnable.js",
+        "line": 348,
+        "column": 7
+      },
+      {
+        "functionName": "Runner.runTest",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 809,
+        "column": 10
+      },
+      {
+        "functionName": "<anonymous>",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 949,
+        "column": 12
+      },
+      {
+        "functionName": "next",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 724,
+        "column": 14
+      },
+      {
+        "functionName": "<anonymous>",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 734,
+        "column": 7
+      },
+      {
+        "functionName": "next",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 595,
+        "column": 14
+      },
+      {
+        "functionName": "Immediate.<anonymous>",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 702,
+        "column": 5
+      },
+      {
+        "functionName": "process.processImmediate",
+        "file": "node:internal/timers",
+        "line": 505,
+        "column": 21
+      }
+    ]
+  },
+  {
+    "internalId": "p12116_32",
+    "pid": 12116,
+    "asyncId": 32,
+    "triggerAsyncId": 21,
+    "origin": "promise-api",
+    "type": "fs.promises.readFile",
+    "combinatorMethod": null,
+    "status": "pending-at-exit",
+    "createdAt": "2026-10-13T05:53:09.163Z",
+    "settledAt": "2026-10-13T05:53:09.267Z",
+    "durationMs": 103.627624,
+    "continuationRuns": 0,
+    "testFile": "test_race.spec.js",
+    "target": "package.json",
+    "stack": [
+      {
+        "functionName": "Context.<anonymous>",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/test_race.spec.js",
+        "line": 8,
+        "column": 8
+      },
+      {
+        "functionName": "callFn",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runnable.js",
+        "line": 360,
+        "column": 23
+      },
+      {
+        "functionName": "Test.run",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runnable.js",
+        "line": 348,
+        "column": 7
+      },
+      {
+        "functionName": "Runner.runTest",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 809,
+        "column": 10
+      },
+      {
+        "functionName": "<anonymous>",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 949,
+        "column": 12
+      },
+      {
+        "functionName": "next",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 724,
+        "column": 14
+      },
+      {
+        "functionName": "<anonymous>",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 734,
+        "column": 7
+      },
+      {
+        "functionName": "next",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 595,
+        "column": 14
+      },
+      {
+        "functionName": "Immediate.<anonymous>",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 702,
+        "column": 5
+      },
+      {
+        "functionName": "process.processImmediate",
+        "file": "node:internal/timers",
+        "line": 505,
+        "column": 21
+      }
+    ]
+  }
+]

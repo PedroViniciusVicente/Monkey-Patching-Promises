@@ -1,0 +1,160 @@
+[
+  {
+    "internalId": "p11523_4",
+    "pid": 11523,
+    "asyncId": 4,
+    "triggerAsyncId": 1,
+    "origin": "constructor",
+    "type": "Promise",
+    "combinatorMethod": null,
+    "status": "fulfilled",
+    "createdAt": "2026-10-13T05:46:27.420Z",
+    "settledAt": "2026-10-13T05:46:27.542Z",
+    "durationMs": 121.80513,
+    "continuationRuns": 0,
+    "testFile": null,
+    "value": {
+      "type": "object",
+      "preview": "Response {}",
+      "truncated": false
+    },
+    "stack": [
+      {
+        "functionName": "createDeferredPromise",
+        "file": "node:internal/deps/undici/undici",
+        "line": 4976,
+        "column": 23
+      },
+      {
+        "functionName": "fetch",
+        "file": "node:internal/deps/undici/undici",
+        "line": 10941,
+        "column": 15
+      },
+      {
+        "functionName": "fetch",
+        "file": "node:internal/deps/undici/undici",
+        "line": 15420,
+        "column": 10
+      },
+      {
+        "functionName": "fetch",
+        "file": "node:internal/bootstrap/web/exposed-window-or-worker",
+        "line": 83,
+        "column": 12
+      },
+      {
+        "functionName": "main",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/async_await_fetch.js",
+        "line": 2,
+        "column": 28
+      },
+      {
+        "functionName": "Object.<anonymous>",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/async_await_fetch.js",
+        "line": 7,
+        "column": 1
+      },
+      {
+        "functionName": "Module._compile",
+        "file": "node:internal/modules/cjs/loader",
+        "line": 1692,
+        "column": 14
+      },
+      {
+        "functionName": "Object..js",
+        "file": "node:internal/modules/cjs/loader",
+        "line": 1824,
+        "column": 10
+      },
+      {
+        "functionName": "Module.load",
+        "file": "node:internal/modules/cjs/loader",
+        "line": 1427,
+        "column": 32
+      },
+      {
+        "functionName": "Module._load",
+        "file": "node:internal/modules/cjs/loader",
+        "line": 1250,
+        "column": 12
+      },
+      {
+        "functionName": "TracingChannel.traceSync",
+        "file": "node:diagnostics_channel",
+        "line": 322,
+        "column": 14
+      },
+      {
+        "functionName": "wrapModuleLoad",
+        "file": "node:internal/modules/cjs/loader",
+        "line": 235,
+        "column": 24
+      },
+      {
+        "functionName": "Module.executeUserEntryPoint [as runMain]",
+        "file": "node:internal/modules/run_main",
+        "line": 152,
+        "column": 5
+      },
+      {
+        "functionName": "<anonymous>",
+        "file": "node:internal/main/run_main_module",
+        "line": 33,
+        "column": 47
+      }
+    ]
+  },
+  {
+    "internalId": "p11523_12",
+    "pid": 11523,
+    "asyncId": 12,
+    "triggerAsyncId": 11,
+    "origin": "constructor",
+    "type": "Promise",
+    "combinatorMethod": null,
+    "status": "fulfilled",
+    "createdAt": "2026-10-13T05:46:27.542Z",
+    "settledAt": "2026-10-13T05:46:27.547Z",
+    "durationMs": 4.894143,
+    "continuationRuns": 0,
+    "testFile": null,
+    "value": {
+      "type": "object",
+      "preview": "{ userId: 1, id: 1, title: 'delectus aut autem', completed: false }",
+      "truncated": false
+    },
+    "stack": [
+      {
+        "functionName": "createDeferredPromise",
+        "file": "node:internal/deps/undici/undici",
+        "line": 4976,
+        "column": 23
+      },
+      {
+        "functionName": "consumeBody",
+        "file": "node:internal/deps/undici/undici",
+        "line": 6200,
+        "column": 23
+      },
+      {
+        "functionName": "_Response.json",
+        "file": "node:internal/deps/undici/undici",
+        "line": 6152,
+        "column": 18
+      },
+      {
+        "functionName": "main",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/async_await_fetch.js",
+        "line": 3,
+        "column": 33
+      },
+      {
+        "functionName": "process.processTicksAndRejections",
+        "file": "node:internal/process/task_queues",
+        "line": 105,
+        "column": 5
+      }
+    ]
+  }
+]

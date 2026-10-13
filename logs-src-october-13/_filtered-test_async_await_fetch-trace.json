@@ -1,0 +1,160 @@
+[
+  {
+    "internalId": "p12006_24",
+    "pid": 12006,
+    "asyncId": 24,
+    "triggerAsyncId": 21,
+    "origin": "constructor",
+    "type": "Promise",
+    "combinatorMethod": null,
+    "status": "fulfilled",
+    "createdAt": "2026-10-13T05:52:00.058Z",
+    "settledAt": "2026-10-13T05:52:00.200Z",
+    "durationMs": 141.821258,
+    "continuationRuns": 0,
+    "testFile": "test_async_await_fetch.spec.js",
+    "value": {
+      "type": "object",
+      "preview": "Response {}",
+      "truncated": false
+    },
+    "stack": [
+      {
+        "functionName": "createDeferredPromise",
+        "file": "node:internal/deps/undici/undici",
+        "line": 4976,
+        "column": 23
+      },
+      {
+        "functionName": "fetch",
+        "file": "node:internal/deps/undici/undici",
+        "line": 10941,
+        "column": 15
+      },
+      {
+        "functionName": "fetch",
+        "file": "node:internal/deps/undici/undici",
+        "line": 15420,
+        "column": 10
+      },
+      {
+        "functionName": "fetch",
+        "file": "node:internal/bootstrap/web/exposed-window-or-worker",
+        "line": 83,
+        "column": 12
+      },
+      {
+        "functionName": "Context.<anonymous>",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/test_async_await_fetch.spec.js",
+        "line": 5,
+        "column": 28
+      },
+      {
+        "functionName": "callFn",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runnable.js",
+        "line": 360,
+        "column": 23
+      },
+      {
+        "functionName": "Test.run",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runnable.js",
+        "line": 348,
+        "column": 7
+      },
+      {
+        "functionName": "Runner.runTest",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 809,
+        "column": 10
+      },
+      {
+        "functionName": "<anonymous>",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 949,
+        "column": 12
+      },
+      {
+        "functionName": "next",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 724,
+        "column": 14
+      },
+      {
+        "functionName": "<anonymous>",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 734,
+        "column": 7
+      },
+      {
+        "functionName": "next",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 595,
+        "column": 14
+      },
+      {
+        "functionName": "Immediate.<anonymous>",
+        "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/node_modules/mocha/lib/runner.js",
+        "line": 702,
+        "column": 5
+      },
+      {
+        "functionName": "process.processImmediate",
+        "file": "node:internal/timers",
+        "line": 505,
+        "column": 21
+      }
+    ]
+  },
+  {
+    "internalId": "p12006_35",
+    "pid": 12006,
+    "asyncId": 35,
+    "triggerAsyncId": 31,
+    "origin": "constructor",
+    "type": "Promise",
+    "combinatorMethod": null,
+    "status": "fulfilled",
+    "createdAt": "2026-10-13T05:52:00.200Z",
+    "settledAt": "2026-10-13T05:52:00.204Z",
+    "durationMs": 3.812763,
+    "continuationRuns": 0,
+    "testFile": "test_async_await_fetch.spec.js",
+    "value": {
+      "type": "object",
+      "preview": "{ userId: 1, id: 1, title: 'delectus aut autem', completed: false }",
+      "truncated": false
+    },
+    "stack": [
+      {
+        "functionName": "createDeferredPromise",
+        "file": "node:internal/deps/undici/undici",
+        "line": 4976,
+        "column": 23
+      },
+      {
+        "functionName": "consumeBody",
+        "file": "node:internal/deps/undici/undici",
+        "line": 6200,
+        "column": 23
+      },
+      {
+        "functionName": "_Response.json",
+        "file": "node:internal/deps/undici/undici",
+        "line": 6152,
+        "column": 18
+      },
+      {
+        "functionName": "Context.<anonymous>",
+        "file": "/home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/test_async_await_fetch.spec.js",
+        "line": 6,
+        "column": 33
+      },
+      {
+        "functionName": "process.processTicksAndRejections",
+        "file": "node:internal/process/task_queues",
+        "line": 105,
+        "column": 5
+      }
+    ]
+  }
+]
