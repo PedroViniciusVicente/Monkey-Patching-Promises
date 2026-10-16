@@ -1,5 +1,17 @@
+# ===== projects =====
+# Ignora tudo dentro de projects, mas permite descer nos diretórios
 projects/*
 !projects/chosen_projects.md
-!projects/micro-benchmarkds/*
+!projects/micro-benchmarks/
 
-src_old/*
+# ===== micro-benchmarks =====
+# Ignora tudo dentro de micro-benchmarks, exceto o que listarmos
+projects/micro-benchmarks/*
+!projects/micro-benchmarks/README.md
+!projects/micro-benchmarks/*.js
+!projects/micro-benchmarks/ESModules_scripts/
+
+# ===== ESModules_scripts =====
+# Ignora tudo dentro, exceto os .mjs que queremos
+projects/micro-benchmarks/ESModules_scripts/*
+!projects/micro-benchmarks/ESModules_scripts/*.mjs
