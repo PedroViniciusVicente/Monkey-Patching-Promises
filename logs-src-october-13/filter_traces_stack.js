@@ -12,7 +12,7 @@ node filter_traces_stack.js test_race-trace.jsonl /home/pedroubuntu/Desktop/monk
 node filter_traces_stack.js flowfuse-trace.jsonl /home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/flowfuse/test/unit/forge/routes/api/team_spec.js _filtered-flowfuse-trace.json
 // filtrou 7852 para 6 (nao OK)
 node filter_traces_stack.js milo-trace.jsonl /home/pedroubuntu/Desktop/monkey_patching_projects/projects/opensource-projects/milo/test/utils/logWebVitalsUtils.test.js _filtered-milo-trace.json
-// filtrou 2891
+// filtrou 2891 para 0 (nao OK)
 */
 
 // filter_traces_stack.js
