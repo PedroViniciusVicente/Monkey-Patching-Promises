@@ -1,0 +1,132 @@
+[
+  {
+    "internalId": "p22390_2",
+    "functionName": "agendarTarefaPrioritaria",
+    "line": 35,
+    "column": 3,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_fs_2.mjs",
+    "triggerAsyncId": 1,
+    "type": "queueMicrotask",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p22390_4",
+    "functionName": "<anonymous>",
+    "line": 25,
+    "column": 5,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_fs_2.mjs",
+    "triggerAsyncId": 3,
+    "type": "setTimeout",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p22390_3",
+    "functionName": "lerDadosComDelay",
+    "line": 24,
+    "column": 10,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_fs_2.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p22390_6",
+    "functionName": "processarFluxoAssincrono",
+    "line": 50,
+    "column": 29,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_fs_2.mjs",
+    "triggerAsyncId": 3,
+    "type": "fs.promises.readFile",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p22390_7",
+    "functionName": "processarFluxoAssincrono",
+    "line": 52,
+    "column": 9,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_fs_2.mjs",
+    "triggerAsyncId": 6,
+    "type": "Promise",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p22390_17",
+    "functionName": "processarFluxoAssincrono",
+    "line": 56,
+    "column": 22,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_fs_2.mjs",
+    "triggerAsyncId": 10,
+    "type": "Promise.then",
+    "stackDepth": 2
+  },
+  {
+    "internalId": "p22390_25",
+    "functionName": "processarFluxoAssincrono",
+    "line": 56,
+    "column": 22,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_fs_2.mjs",
+    "triggerAsyncId": 18,
+    "type": "Promise.then",
+    "stackDepth": 2
+  },
+  {
+    "internalId": "p22390_32",
+    "functionName": "processarFluxoAssincrono",
+    "line": 56,
+    "column": 22,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_fs_2.mjs",
+    "triggerAsyncId": 26,
+    "type": "Promise.then",
+    "stackDepth": 2
+  },
+  {
+    "internalId": "p22390_34",
+    "functionName": "processarFluxoAssincrono",
+    "line": 59,
+    "column": 32,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_fs_2.mjs",
+    "triggerAsyncId": 32,
+    "type": "Promise",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p22390_35",
+    "functionName": "processarFluxoAssincrono",
+    "line": 61,
+    "column": 11,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_fs_2.mjs",
+    "triggerAsyncId": 34,
+    "type": "Promise.resolve",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p22390_36",
+    "functionName": "processarFluxoAssincrono",
+    "line": 61,
+    "column": 49,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_fs_2.mjs",
+    "triggerAsyncId": 35,
+    "type": "Promise.then",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p22390_37",
+    "functionName": "processarFluxoAssincrono",
+    "line": 65,
+    "column": 22,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_fs_2.mjs",
+    "triggerAsyncId": 34,
+    "type": "Promise",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p22390_5",
+    "functionName": "<anonymous>",
+    "line": 79,
+    "column": 30,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_fs_2.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise",
+    "stackDepth": 0
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "internalId": "p24671_3",
+    "functionName": "conectarBanco",
+    "line": 21,
+    "column": 20,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_sqlite.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p24671_6",
+    "functionName": "conectarBanco",
+    "line": 26,
+    "column": 12,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_sqlite.mjs",
+    "triggerAsyncId": 3,
+    "type": "Promise",
+    "stackDepth": 1
+  },
+  {
+    "internalId": "p24671_4",
+    "functionName": "main",
+    "line": 56,
+    "column": 20,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_sqlite.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p24671_7",
+    "functionName": "cadastrarProduto",
+    "line": 38,
+    "column": 30,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_sqlite.mjs",
+    "triggerAsyncId": 4,
+    "type": "Promise",
+    "stackDepth": 1
+  },
+  {
+    "internalId": "p24671_8",
+    "functionName": "main",
+    "line": 58,
+    "column": 9,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_sqlite.mjs",
+    "triggerAsyncId": 4,
+    "type": "Promise",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p24671_9",
+    "functionName": "cadastrarProduto",
+    "line": 38,
+    "column": 30,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_sqlite.mjs",
+    "triggerAsyncId": 8,
+    "type": "Promise",
+    "stackDepth": 1
+  },
+  {
+    "internalId": "p24671_10",
+    "functionName": "main",
+    "line": 59,
+    "column": 9,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_sqlite.mjs",
+    "triggerAsyncId": 8,
+    "type": "Promise",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p24671_11",
+    "functionName": "listarProdutos",
+    "line": 46,
+    "column": 29,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_sqlite.mjs",
+    "triggerAsyncId": 10,
+    "type": "Promise",
+    "stackDepth": 1
+  },
+  {
+    "internalId": "p24671_12",
+    "functionName": "main",
+    "line": 61,
+    "column": 23,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_sqlite.mjs",
+    "triggerAsyncId": 10,
+    "type": "Promise",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p24671_13",
+    "functionName": "buscarProdutoPorId",
+    "line": 51,
+    "column": 28,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_sqlite.mjs",
+    "triggerAsyncId": 12,
+    "type": "Promise",
+    "stackDepth": 1
+  },
+  {
+    "internalId": "p24671_14",
+    "functionName": "main",
+    "line": 65,
+    "column": 24,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_sqlite.mjs",
+    "triggerAsyncId": 12,
+    "type": "Promise",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p24671_15",
+    "functionName": "main",
+    "line": 69,
+    "column": 12,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_sqlite.mjs",
+    "triggerAsyncId": 14,
+    "type": "Promise",
+    "stackDepth": 1
+  },
+  {
+    "internalId": "p24671_5",
+    "functionName": "<anonymous>",
+    "line": 72,
+    "column": 7,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_sqlite.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise",
+    "stackDepth": 0
+  }
+]

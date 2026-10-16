@@ -1,0 +1,92 @@
+[
+  {
+    "internalId": "p15274_4",
+    "functionName": "gerarHashSenha",
+    "line": 30,
+    "column": 22,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_crypto.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p15274_5",
+    "functionName": "obterVersaoSistema",
+    "line": 40,
+    "column": 28,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_crypto.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p15274_2",
+    "functionName": "aguardarEventoCustomizado",
+    "line": 48,
+    "column": 3,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_crypto.mjs",
+    "triggerAsyncId": 1,
+    "type": "setTimeout",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p15274_6",
+    "functionName": "aguardarEventoCustomizado",
+    "line": 51,
+    "column": 31,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_crypto.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p15274_8",
+    "functionName": "gerarHashSenha",
+    "line": 32,
+    "column": 22,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_crypto.mjs",
+    "triggerAsyncId": 4,
+    "type": "Promise",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p15274_3",
+    "functionName": "main",
+    "line": 69,
+    "column": 57,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_crypto.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise.all",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p15274_13",
+    "functionName": "buscarDadosAxios",
+    "line": 59,
+    "column": 32,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_crypto.mjs",
+    "triggerAsyncId": 3,
+    "type": "Promise",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p15274_14",
+    "functionName": "main",
+    "line": 79,
+    "column": 28,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_crypto.mjs",
+    "triggerAsyncId": 3,
+    "type": "Promise",
+    "stackDepth": 0
+  },
+  {
+    "internalId": "p15274_7",
+    "functionName": "<anonymous>",
+    "line": 83,
+    "column": 7,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_crypto.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise",
+    "stackDepth": 0
+  }
+]

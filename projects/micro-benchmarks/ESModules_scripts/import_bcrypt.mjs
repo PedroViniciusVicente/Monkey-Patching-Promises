@@ -7,18 +7,18 @@ import bcrypt from 'bcrypt';
 
 /*
 ** Linhas com operações assincronas: 12
-** 29 - await writeFile
-** 30 - await readFile
-** 31 - await unlink
-** 39 - await setTimeout
-** 40 - await resolve
-** 49 - await bcrypt.hash
-** 50 - await bcrypt.compare
-** 58 - await fetch
-** 59 - await resposta.json
-** 67 - await Promise.all
-** 77 - await buscarDadosFetch
-** 81 - await main
+** 29 - await writeFile OK
+** 30 - await readFile OK
+** 31 - await unlink OK
+** 39 - await setTimeout OK
+** 40 - await resolve OK
+** 49 - await bcrypt.hash OK
+** 50 - await bcrypt.compare OK
+** 58 - await fetch OK
+** 59 - await resposta.json OK
+** 67 - await Promise.all OK
+** 77 - await buscarDadosFetch OK
+** 81 - await main OK
 */
 
 // ---------------------------------------------------------------------------

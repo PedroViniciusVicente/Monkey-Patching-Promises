@@ -12,15 +12,15 @@ const canalNotificacoes = new EventEmitter();
 
 /*
 ** Linhas com operações assincronas: 9
-** 30 - await randomBytes
-** 32 - await pbkdf2
-** 40 - await exec
-** 48 - await setTimeout
-** 51 - await once
-** 59 - await axios.get
-** 69 - await Promise.all
-** 79 - await buscarDadosAxios
-** 83 - await main
+** 30 - await randomBytes OK
+** 32 - await pbkdf2 OK
+** 40 - await exec OK
+** 48 - await setTimeout OK
+** 51 - await once OK
+** 59 - await axios.get OK
+** 69 - await Promise.all OK
+** 79 - await buscarDadosAxios OK
+** 83 - await main OK
 */
 
 // ---------------------------------------------------------------------------

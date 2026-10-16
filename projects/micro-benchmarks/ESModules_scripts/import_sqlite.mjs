@@ -3,20 +3,20 @@ import { open } from 'sqlite';
 import sqlite3 from 'sqlite3';
 
 /* 
-** Linhas com operações assincronas: 11
-** 20 - await open
-** 21 - await db.exec
-** 32 - await db.run
-** 37 - await db.all
-** 42 - await db.get
-** 50 - await conectarBanco
-** 53 - await cadastrarProduto
-** 54 - await cadastrarProduto
-** 56 - await listarProdutos
-** 59 - await buscarProdutoPorId
-** 62 - await db.close
+** Linhas com operações assincronas: 13
+** 21 - await open
+** 26 - await db.exec
+** 38 - await db.run x2
+** 46 - await db.all
+** 51 - await db.get
+** 56 - await conectarBanco
+** 58 - await cadastrarProduto
+** 59 - await cadastrarProduto
+** 61 - await listarProdutos
+** 65 - await buscarProdutoPorId
+** 69 - await db.close
+** 72 - await main
 */
-
 async function conectarBanco() {
   const db = await open({ // [REGISTRAR] Abertura assíncrona de conexão com DB
     filename: './dados_locais.db',
@@ -29,7 +29,7 @@ async function conectarBanco() {
       nome TEXT NOT NULL,
       preco REAL NOT NULL
     )
-  `); // [REGISTRAR] Execução assíncrona de DDL SQL
+  `); // [REGISTRAR (Linha 26)] Execução assíncrona de DDL SQL
 
   return db;
 }
@@ -38,7 +38,7 @@ async function cadastrarProduto(db, nome, preco) {
   const resultado = await db.run(
     'INSERT INTO produtos (nome, preco) VALUES (?, ?)',
     [nome, preco]
-  ); // [REGISTRAR] Inserção/Escrita assíncrona SQL
+  ); // [REGISTRAR (Linha 38)] x2 Inserção/Escrita assíncrona SQL
   return resultado.lastID;
 }
 

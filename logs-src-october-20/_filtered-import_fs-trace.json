@@ -1,0 +1,11 @@
+[
+  {
+    "internalId": "p7926_2",
+    "functionName": "main",
+    "line": 4,
+    "column": 34,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_fs.mjs",
+    "triggerAsyncId": 1,
+    "type": "fs.promises.readFile"
+  }
+]

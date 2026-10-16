@@ -7,9 +7,9 @@ import { setTimeout as sleep } from 'node:timers/promises';
 import pLimit from 'p-limit';
 
 /*
-** Linhas com operações assincronas: 8
-** 32 - for await...of
-** 53 - await pipeline
+** Linhas com operações assincronas: 10
+** 32 - for await...of x3, não OK: x4
+** 53 - await pipeline OK
 ** 66 - await sleep
 ** 71 - await Promise.all
 ** 85 - await rl.question
