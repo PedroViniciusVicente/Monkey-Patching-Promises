@@ -3,18 +3,18 @@ import fs from 'node:fs/promises';
 import { setTimeout as sleep } from 'node:timers/promises';
 
 /*
-** Linhas com operações assincronas: 11
-** 24 - new Promise
-** 25 - setTimeout
-** 35 - queueMicrotask
-** 49 - await lerDadosComDelay
-** 51 - await fs.readFile
-** 53 - await sleep
-** 55 - await fetch
-** 57 - await resposta.json
-** 59 - Promise.resolve().then
-** 63 - await import
-** 78 - await processarFluxoAssincrono
+** Linhas com operações assincronas: 14
+** 24 - new Promise OK
+** 25 - setTimeout OK
+** 35 - queueMicrotask OK
+** 48 - await lerDadosComDelay - não pegou, pois os 2 traces que tem o 49, tem os registros do 24 e 25 antes no stack
+** 50 - await fs.readFile OK
+** 52 - await sleep OK
+** 56 - await fetch x3 OK x3
+** 59 - await resposta.json OK
+** 61 - Promise.resolve().then x2 OK x2
+** 65 - await import OK
+** 79 - await processarFluxoAssincrono OK
 */
 
 // ---------------------------------------------------------------------------
@@ -43,7 +43,6 @@ function agendarTarefaPrioritaria() {
 async function processarFluxoAssincrono() {
   console.log('Iniciando análise...');
 
-  // Dispara a microtask
   agendarTarefaPrioritaria();
 
   const resultadoDelay = await lerDadosComDelay(); // [REGISTRAR] Chamada de função async / Await em Promise customizada
@@ -52,11 +51,14 @@ async function processarFluxoAssincrono() {
 
   await sleep(200); // [REGISTRAR] Timer baseado em Promises (node:timers/promises)
 
-  const resposta = await fetch('https://jsonplaceholder.typicode.com/todos/1'); // [REGISTRAR] Requisição de Rede assíncrona (Fetch API)
+  let resposta;
+  for (let i = 0; i < 3; i++) {
+    resposta = await fetch('https://jsonplaceholder.typicode.com/todos/1'); // [REGISTRAR x3] Requisição de Rede assíncrona (Fetch API)
+  }
 
   const dados = await resposta.json(); // [REGISTRAR] Leitura/Parsing assíncrono de Body de resposta HTTP (.json())
 
-  Promise.resolve('Fluxo secundário concluído').then((msg) => { // [REGISTRAR] Encadeamento assíncrono via método .then()
+  Promise.resolve('Fluxo secundário concluído').then((msg) => { // [REGISTRAR x2] Encadeamento assíncrono via método .then()
     console.log(`[Then] ${msg}`);
   });
 
@@ -74,9 +76,5 @@ async function processarFluxoAssincrono() {
 // ---------------------------------------------------------------------------
 // 4. Execução de Top-Level Await
 // ---------------------------------------------------------------------------
-try {
-  const resultadoFinal = await processarFluxoAssincrono(); // [REGISTRAR] Execução inicial da função async principal via Top-Level Await
-  console.log('Resultado processado com sucesso:', resultadoFinal);
-} catch (erro) {
-  console.error('Erro na execução assíncrona:', erro);
-}
+const resultadoFinal = await processarFluxoAssincrono(); // [REGISTRAR] Execução inicial da função async principal via Top-Level Await
+console.log('Resultado processado com sucesso:', resultadoFinal);
