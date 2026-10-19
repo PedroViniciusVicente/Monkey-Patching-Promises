@@ -5,17 +5,17 @@ import { pipeline } from 'node:stream/promises';
 import { createInterface } from 'node:readline/promises';
 import { setTimeout as sleep } from 'node:timers/promises';
 import pLimit from 'p-limit';
-
 /*
-** Linhas com operações assincronas: 10
-** 32 - for await...of x3, não OK: x4
+** Linhas com operações assincronas: 18
+** 32 - for await...of x3, OK: x3 (+1 column 3)
 ** 53 - await pipeline OK
-** 66 - await sleep
-** 71 - await Promise.all
-** 85 - await rl.question
-** 94 - await Promise.all
-** 104 - await simularPerguntaAssincrona
-** 108 - await main
+** 65 - limit(async) x4, OK x4
+** 66 - await sleep x4, OK x4 
+** 71 - await Promise.all OK
+** 85 - await rl.question OK
+** 94 - await Promise.all OK
+** 104 - await simularPerguntaAssincrona OK
+** 108 - await main OK
 */
 
 // ---------------------------------------------------------------------------
@@ -29,7 +29,7 @@ async function lerLinhaPorLinha() {
   });
 
   const primeirasLinhas = [];
-  for await (const linha of rl) { // [REGISTRAR] Iteração assíncrona sobre Readable Stream (for await...of)
+  for await (const linha of rl) { // [REGISTRAR x3] Iteração assíncrona sobre Readable Stream (for await...of)
     primeirasLinhas.push(linha);
     if (primeirasLinhas.length >= 3) break;
   }
@@ -62,8 +62,8 @@ async function executarComLimiteConcorrencia() {
   const itens = [100, 200, 300, 400];
 
   const tarefas = itens.map((ms, index) => {
-    return limit(async () => {
-      await sleep(ms); // [REGISTRAR] Pausa/Timer assíncrono dentro de tarefa com concorrência limitada
+    return limit(async () => { // [REGISTRAR x4] Promise que limita os worker threads a 2
+      await sleep(ms); // [REGISTRAR x4] Pausa/Timer assíncrono dentro de tarefa com concorrência limitada
       return `Item ${index + 1} processado após ${ms}ms`;
     });
   });

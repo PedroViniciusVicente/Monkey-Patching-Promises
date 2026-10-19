@@ -9,7 +9,7 @@ node resume_traces.js import_sqlite-trace.jsonl /home/pedroubuntu/Desktop/monkey
 node resume_traces.js import_bcrypt-trace.jsonl /home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_bcrypt.mjs _filtered-import_bcrypt-trace.json
 // filtrou de 19 para 12, OK!
 node resume_traces.js import_stream-trace.jsonl /home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_stream.mjs _filtered-import_stream-trace.json
-// filtrou de 30 para 18, era para ser 10?
+// filtrou de 30 para 18, OK!
 */
 
 // resume_traces.js
