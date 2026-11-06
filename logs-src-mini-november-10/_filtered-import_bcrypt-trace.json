@@ -1,0 +1,62 @@
+[
+  {
+    "internalId": null,
+    "functionName": "main",
+    "line": 67,
+    "column": 58,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_bcrypt.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise.then",
+    "stackDepth": 0
+  },
+  {
+    "internalId": null,
+    "functionName": "processarBcrypt",
+    "line": 49,
+    "column": 29,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_bcrypt.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise",
+    "stackDepth": 2
+  },
+  {
+    "internalId": null,
+    "functionName": "main",
+    "line": 67,
+    "column": 58,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_bcrypt.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise.then",
+    "stackDepth": 0
+  },
+  {
+    "internalId": null,
+    "functionName": "processarBcrypt",
+    "line": 50,
+    "column": 35,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_bcrypt.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise",
+    "stackDepth": 2
+  },
+  {
+    "internalId": null,
+    "functionName": "main",
+    "line": 67,
+    "column": 58,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_bcrypt.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise.then",
+    "stackDepth": 0
+  },
+  {
+    "internalId": null,
+    "functionName": "buscarDadosFetch",
+    "line": 58,
+    "column": 26,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_bcrypt.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise",
+    "stackDepth": 1
+  }
+]

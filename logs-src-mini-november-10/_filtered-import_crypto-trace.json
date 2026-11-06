@@ -1,0 +1,42 @@
+[
+  {
+    "internalId": null,
+    "functionName": "main",
+    "line": 69,
+    "column": 57,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_crypto.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise.then",
+    "stackDepth": 0
+  },
+  {
+    "internalId": null,
+    "functionName": "main",
+    "line": 69,
+    "column": 57,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_crypto.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise.then",
+    "stackDepth": 0
+  },
+  {
+    "internalId": null,
+    "functionName": "main",
+    "line": 69,
+    "column": 57,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_crypto.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise.then",
+    "stackDepth": 0
+  },
+  {
+    "internalId": null,
+    "functionName": "buscarDadosAxios",
+    "line": 59,
+    "column": 32,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_crypto.mjs",
+    "triggerAsyncId": 5,
+    "type": "Promise.then",
+    "stackDepth": 5
+  }
+]

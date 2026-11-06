@@ -1,0 +1,112 @@
+[
+  {
+    "internalId": null,
+    "functionName": "<anonymous>",
+    "line": 65,
+    "column": 12,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_stream.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise",
+    "stackDepth": 1
+  },
+  {
+    "internalId": null,
+    "functionName": "<anonymous>",
+    "line": 65,
+    "column": 12,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_stream.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise",
+    "stackDepth": 1
+  },
+  {
+    "internalId": null,
+    "functionName": "main",
+    "line": 94,
+    "column": 72,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_stream.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise.then",
+    "stackDepth": 0
+  },
+  {
+    "internalId": null,
+    "functionName": "main",
+    "line": 94,
+    "column": 72,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_stream.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise.then",
+    "stackDepth": 0
+  },
+  {
+    "internalId": null,
+    "functionName": "<anonymous>",
+    "line": 65,
+    "column": 12,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_stream.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise",
+    "stackDepth": 1
+  },
+  {
+    "internalId": null,
+    "functionName": "executarComLimiteConcorrencia",
+    "line": 71,
+    "column": 36,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_stream.mjs",
+    "triggerAsyncId": 2,
+    "type": "Promise.then",
+    "stackDepth": 0
+  },
+  {
+    "internalId": null,
+    "functionName": "<anonymous>",
+    "line": 65,
+    "column": 12,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_stream.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise",
+    "stackDepth": 1
+  },
+  {
+    "internalId": null,
+    "functionName": "executarComLimiteConcorrencia",
+    "line": 71,
+    "column": 36,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_stream.mjs",
+    "triggerAsyncId": 5,
+    "type": "Promise.then",
+    "stackDepth": 0
+  },
+  {
+    "internalId": null,
+    "functionName": "executarComLimiteConcorrencia",
+    "line": 71,
+    "column": 36,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_stream.mjs",
+    "triggerAsyncId": 8,
+    "type": "Promise.then",
+    "stackDepth": 0
+  },
+  {
+    "internalId": null,
+    "functionName": "executarComLimiteConcorrencia",
+    "line": 71,
+    "column": 36,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_stream.mjs",
+    "triggerAsyncId": 11,
+    "type": "Promise.then",
+    "stackDepth": 0
+  },
+  {
+    "internalId": null,
+    "functionName": "main",
+    "line": 94,
+    "column": 72,
+    "file": "file:///home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_stream.mjs",
+    "triggerAsyncId": 1,
+    "type": "Promise.then",
+    "stackDepth": 0
+  }
+]
