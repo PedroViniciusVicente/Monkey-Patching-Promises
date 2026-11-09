@@ -7,7 +7,7 @@ node resume_traces.js import_crypto-trace.jsonl /home/pedroubuntu/Desktop/monkey
 node resume_traces.js import_sqlite-trace.jsonl /home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_sqlite.mjs _filtered-import_sqlite-trace.json
 // obteve 7, era para ser 13
 node resume_traces.js import_bcrypt-trace.jsonl /home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_bcrypt.mjs _filtered-import_bcrypt-trace.json
-// obteve 6, era para ser 12
+// obteve 7, era para ser 12
 node resume_traces.js import_stream-trace.jsonl /home/pedroubuntu/Desktop/monkey_patching_projects/projects/micro-benchmarks/ESModules_scripts/import_stream.mjs _filtered-import_stream-trace.json
 // obteve 11, era para ser 18
 */
