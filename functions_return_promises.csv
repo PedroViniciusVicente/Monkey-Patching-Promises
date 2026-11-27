@@ -1,4 +1,4 @@
-"Módulo / Classe";"Função / Método";"Retorno Documentado"
+"Module / Class";"Function / Method";"Documented Return"
 "assert";"assert.doesNotReject(asyncFn[, error][, message])";"Promise"
 "assert";"assert.rejects(asyncFn[, error][, message])";"Promise"
 "bench";"bench([name][, options], fn)";"Promise"
